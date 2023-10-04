@@ -1251,6 +1251,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567290156}
   m_CullTransparentMesh: 1
+--- !u!4 &1698976527 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1612558617488233991, guid: 270eb19e8a8e57d43a3b819be31c877b, type: 3}
+  m_PrefabInstance: {fileID: 7957220419100140209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1720776740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,7 +1410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f014ac93acbb3d40851c1bfac3c4df7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1698976527}
 --- !u!82 &1733279739
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1773,6 +1778,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 123729241178280826, guid: 270eb19e8a8e57d43a3b819be31c877b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.98
+      objectReference: {fileID: 0}
     - target: {fileID: 1010883090754423998, guid: 270eb19e8a8e57d43a3b819be31c877b, type: 3}
       propertyPath: m_Name
       value: Complete XR Origin Set Up Variant
