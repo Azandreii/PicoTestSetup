@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Nearsight_Orb : MonoBehaviour
 {
-    public float loadRange = 2f;
+    public float loadRange = 20f;
     private void Start()
     {
         Camera camera = GetComponent<Camera>();
