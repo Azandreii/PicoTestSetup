@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/setup stuff/XRI_Examples/Scenes/XRI_Examples_Main.unity
     guid: ba755f5a181505a4799b21685d4c7576
+  - enabled: 1
+    path: Assets/Main Menu.unity
+    guid: f0adbe91bba91024eb7e55c57775ddd1
+  - enabled: 1
+    path: Assets/Our actual stuff/Scenes/Map.unity
+    guid: 5e4d94b5520030f48accdabe801c4c51
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 453fd0cb70b55564693ab59f69b58f2c, type: 2}
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: 27dd6118e82996b49a061e630523a776, type: 2}
