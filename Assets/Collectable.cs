@@ -12,8 +12,13 @@ public class Collectable : MonoBehaviour
 
     private Vector3 startingPosition;
     public Player player;
+
     public TMP_Text text;
     public Image image;
+    public Canvas canvas;
+
+
+    bool timeStarted = false;
     // Start is called before the first frame update
     // Update is called once per frame
 
@@ -24,15 +29,24 @@ public class Collectable : MonoBehaviour
     }
     void Update()
     {
-        if (Vector3.Distance(gameObject.transform.position, startingPosition) > 3f)
+        if (Vector3.Distance(gameObject.transform.position, startingPosition) > 1.5f)
         {
             //TODO: Particles
-            player.collectablesFound += 1;
+           
             text.text = string.Format("Memories found: {0}/{1}", player.collectablesFound, player.maxCollectables);
-            text.canvasRenderer.SetAlpha(1f);
-            image.canvasRenderer.SetAlpha(1f);
-            gameObject.SetActive(false);
-            StartCoroutine(fadeOut(3f));
+          
+            if (!timeStarted)
+            {
+                canvas.transform.position = startingPosition
+                + new Vector3(0f, 2.5f, 0f);
+                player.collectablesFound += 1;
+              /*  text.canvasRenderer.SetAlpha(1f);
+                image.canvasRenderer.SetAlpha(1f);*/
+                Debug.Log("Should show alpha");
+                timeStarted = true;
+                StartCoroutine(fadeOut(3f));
+                
+            }
         }
     }
     IEnumerator fadeOut(float fadeOutTime)
@@ -41,5 +55,6 @@ public class Collectable : MonoBehaviour
         yield return new WaitForSeconds(3f);
         text.CrossFadeAlpha(0f, fadeOutTime, false);
         image.CrossFadeAlpha(0f, fadeOutTime, false);
+        //gameObject.SetActive(false);
     }
 }
