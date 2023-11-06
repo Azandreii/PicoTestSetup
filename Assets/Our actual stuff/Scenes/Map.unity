@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8435915, g: 0.5959905, b: 0.460724, a: 1}
+  m_IndirectSpecularColor: {r: 0.843844, g: 0.59469515, b: 0.45949733, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18242,27 +18242,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7ad553c62db4149af56a1a06cf857d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 115.13
+      value: 116.75333
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7ad553c62db4149af56a1a06cf857d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 115.13
+      value: 116.75333
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7ad553c62db4149af56a1a06cf857d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 115.13
+      value: 116.75333
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7ad553c62db4149af56a1a06cf857d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -153.21
+      value: -153.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7ad553c62db4149af56a1a06cf857d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.98
+      value: 5.2996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7ad553c62db4149af56a1a06cf857d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.77
+      value: -0.75049
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7ad553c62db4149af56a1a06cf857d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18768,7 +18768,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
   m_Intensity: 1.18
   m_Range: 10
   m_SpotAngle: 30
