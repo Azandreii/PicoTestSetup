@@ -17,4 +17,8 @@ public class Buttons : MonoBehaviour
         EditorSceneManager.OpenScene("Map");
          SceneManager.UnloadSceneAsync(0);
     }    
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 }
