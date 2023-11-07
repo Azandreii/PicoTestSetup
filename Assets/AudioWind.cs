@@ -22,23 +22,30 @@ public class AudioWind : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*        if (!characterController.velocity.Equals(new Vector3(0f, 0f, 0f)))
-                {
-                    if (!isPlaying)
-                    {
-                        audioData.UnPause();
-                        isPlaying = true;
-                    }
-                }
-                else
-                {
-                    if (isPlaying)
-                    {
-                        audioData.Pause();
-                        isPlaying = false;
-                    }
-                }
+        StartCoroutine("WindCooldown");
+    }
+               
+    
 
-            }*/
+    IEnumerator WindCooldown()
+    {
+        if (!isPlaying)
+        {
+            audioData.UnPause();
+            isPlaying = true;
+        }
+           
+
+        yield return new WaitForSeconds(Random.Range(10f, 15f));
+
+        if (isPlaying)
+        {
+            audioData.Pause();
+            isPlaying = false;
+        }
+
+        yield return new WaitForSeconds(Random.Range(10f, 15f));
+
+
     }
 }
