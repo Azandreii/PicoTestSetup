@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
+
 
 public class Buttons : MonoBehaviour
 {
     private void Start()
     {
-        SceneManager.UnloadSceneAsync(1);
+        SceneManager.UnloadSceneAsync("Main Menu");
     }
     // Start is called before the first frame update
     public void playGame()
     {
         SceneManager.LoadSceneAsync(1);
-        EditorSceneManager.OpenScene("Map");
+        SceneManager.LoadScene("Map");
          SceneManager.UnloadSceneAsync(0);
     }    
     public void quitGame()
