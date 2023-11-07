@@ -37,6 +37,7 @@ public class SittingBench : MonoBehaviour
         {
             
             player.transform.position = SittingSpot;
+            RenderSettings.fog = false;
             leftController.SetActive(false);
 
             backoutbutton.SetActive(true);
@@ -52,6 +53,7 @@ public class SittingBench : MonoBehaviour
     {
         leftController.SetActive(true);
         backoutbutton.SetActive(false);
+        RenderSettings.fog = true;
         meditate = false;
         
     }

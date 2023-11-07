@@ -40,8 +40,8 @@ public class Collectable : MonoBehaviour
                 canvas.transform.position = startingPosition
                 + new Vector3(0f, 2.5f, 0f);
                 player.collectablesFound += 1;
-              /*  text.canvasRenderer.SetAlpha(1f);
-                image.canvasRenderer.SetAlpha(1f);*/
+              text.canvasRenderer.SetAlpha(1f);
+                image.canvasRenderer.SetAlpha(1f);
                 Debug.Log("Should show alpha");
                 timeStarted = true;
                 StartCoroutine(fadeOut(3f));
@@ -55,6 +55,8 @@ public class Collectable : MonoBehaviour
         yield return new WaitForSeconds(3f);
         text.CrossFadeAlpha(0f, fadeOutTime, false);
         image.CrossFadeAlpha(0f, fadeOutTime, false);
-        //gameObject.SetActive(false);
+        timeStarted = false;
+        gameObject.SetActive(false);
+        
     }
 }
